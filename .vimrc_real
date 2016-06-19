@@ -1,0 +1,25 @@
+" defaults
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+execute pathogen#infect()
+
+nmap <C-t> :tabnew<CR>
+nmap - :tabprev<CR>
+nmap = :tabnext<CR>
+
+syntax enable
+set background=light
+colorscheme solarized
+
+set clipboard=unnamed
+set nu
+
+set guifont=Source\ Code\ Pro:h15
+
+" https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
+set encoding=utf-8
+
+au BufNewFile,BufRead *.py set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
